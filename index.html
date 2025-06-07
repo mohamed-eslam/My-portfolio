@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Eslam</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-layout">
+        <!-- Sidebar (visible on desktop & tablet) -->
+        <aside class="sidebar" id="mobileSidebar">
+            <div class="sidebar__top">
+                <img src="imgs/image_mo.jpeg" alt="Mohamed Eslam" class="sidebar__avatar" />
+                <div class="sidebar__info">
+                    <h2 class="sidebar__name">Mohamed Eslam</h2>
+                    <p class="sidebar__title">Senior UI/UX Designer</p>
+                </div>
+                <button class="sidebar__close" id="closeSidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar__nav">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stack.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Stack</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <hr class="sidebar__divider" />
+
+            <nav class="sidebar__social">
+                <a href="#"><i class="fab fa-x-twitter"></i><span>Twitter</span></a>
+                <a href="#"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                <a href="https://framer.com/projects/?teamId=a42255cd-bb03-4445-97d9-6419d2cebc14"><i class="fas fa-pen-nib"></i><span>Framer</span></a>
+                <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </nav>
+        </aside>
+
+        <!-- Mobile Header (visible on small screens) -->
+        <header class="mobile-header">
+            <div class="mobile-header__container">
+                <img src="imgs/image_mo.jpeg" alt="Mohamed Eslam" class="mobile-header__avatar" />
+                <div class="mobile-header__info">
+                    <h2 class="mobile-header__name">Mohamed Eslam</h2>
+                    <p class="mobile-header__title">Senior UI/UX Designer</p>
+                </div>
+                <button class="mobile-header__toggle" id="menuOpen">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+                <button class="mobile-header__toggle" id="menuClose">
+                    <i class="fas fa-times" id="menuIcon"></i>
+                </button>
+            </div>
+            <div id="mobileNavigations">
+                <nav class="sidebar__nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stack.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Stack</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <hr class="sidebar__divider" />
+
+                <nav class="sidebar__social">
+                    <a href="#"><i class="fab fa-x-twitter"></i><span>Twitter</span></a>
+                    <a href="#"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="#"><i class="fas fa-pen-nib"></i><span>Framer</span></a>
+                    <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- JavaScript toggle -->
+        <script>
+            const menuIcon = document.getElementById("menuIcon");
+            const sidebar = document.getElementById("mobileSidebar");
+            const openMenueBtn = document.getElementById("menuOpen");
+            const closeMenueBtn = document.getElementById("menuClose");
+
+            openMenueBtn.addEventListener("click", () => {
+                mobileNavigations.classList.add("active");
+                openMenueBtn.classList.add("hide");
+                closeMenueBtn.classList.add("active");
+            });
+
+            closeMenueBtn.addEventListener("click", () => {
+                mobileNavigations.classList.remove("active");
+                openMenueBtn.classList.remove("hide");
+                closeMenueBtn.classList.remove("active");
+            });
+        </script>
+
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero__top">
+                    <div class="hero__intro">
+                        <h1 class="hero__title">Hey 👋, I'm Mohamed!</h1>
+                    </div>
+
+                    <div class="hero__cta">
+                        <div class="hero__status">
+                            <span class="dot"></span>
+                            <span>Available for Projects</span>
+                        </div>
+                        <a href="contact.html" class="btn btn--black">Contact Me</a>
+                    </div>
+                </div>
+
+                <p class="hero__subtitle">
+                    I’m Mohamed Eslam, a passionate Creative Designer with multiple hats. I focus on creating intuitive,
+                    user-friendly, and visually engaging digital experiences that solve real problems and deliver
+                    measurable results.
+                </p>
+            </section>
+
+            <!-- About me Section -->
+            <section class="about">
+                <div class="about__header">
+                    <h2 class="about__title">About Me</h2>
+                </div>
+
+                <div class="about__card">
+                    <div class="about__grid-2x2">
+
+                        <!-- Academic Education -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/academic.svg" alt="" class="about__icon" />
+                                <h3>Academic Education</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">Tanta University – Bachelor’s in Business Information
+                                        Systems</p>
+                                    <span class="about__item-date">2014 – 2018</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Non-Formal Education -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/non-formal.svg" alt="" class="about__icon" />
+                                <h3>Non-Formal Education</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">Visual Design – IxDF</p>
+                                    <span class="about__item-date">2024</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/experience.svg" alt="" class="about__icon" />
+                                <h3>Experience</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">Senior UI/UX Designer – ELARABY Group</p>
+                                    <span class="about__item-date">2021 – Present</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/certificate.svg" alt="" class="about__icon" />
+                                <h3>Certifications</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">Accessibility: How to Design for All – Interaction
+                                        Design Foundation
+                                    </p>
+                                    <span class="about__item-date">2023</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Start Project Sections-->
+            <section class="projects">
+                <div class="projects__header">
+                    <h2 class="projects__title">Projects</h2>
+                    <a href="projects.html" class="projects__btn">
+                        View More Projects <span class="arrow">→</span>
+                    </a>
+                </div>
+                <div class="projects__grid">
+
+                    <!-- KAJITO Project -->
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="imgs/kajitoo.png" alt="KAJITO Project" />
+                            <div class="project-card__overlay">
+                                <a href="https://www.figma.com/proto/q8ets3ieBNLwwyvJgejQxI/Kajito-Project?page-id=3%3A5&node-id=19-3&viewport=317%2C444%2C0.19&t=JSs4Kfu1lF9CPrmO-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=19%3A3"
+                                    class="project-card__btn" target="_blank" rel="noopener">
+                                    <i class="fas fa-eye"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__title">KAJITO - The Future of Technology</p>
+                    </div>
+
+                    <!-- OORO TV OS Project -->
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="imgs/OROO.png" alt="OORO TV OS Project" />
+                            <div class="project-card__overlay">
+                                <a href="https://www.figma.com/proto/0PcG3djA3zOFQ4WjIbuc3n/OORO-TV-OS-UX-UI-Team-Assignments?page-id=3094%3A53849&node-id=15193-43799&viewport=20474%2C15317%2C0.16&t=GAk9jYMn8PsJviRU-1&scaling=contain&content-scaling=fixed&starting-point-node-id=15193%3A44757&show-proto-sidebar=1"
+                                    class="project-card__btn" target="_blank" rel="noopener">
+                                    <i class="fas fa-eye"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__title">OORO TV OS – Smart TV Operating System</p>
+                    </div>
+
+                    <!-- Another Project -->
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="imgs/go.png" alt="Natours Project" />
+                            <div class="project-card__overlay">
+                                <a href="https://www.figma.com/proto/prrLwvJmiB3gLVZEetRFAL/Transportation-App?page-id=1%3A3&node-id=6-3851&viewport=746%2C455%2C0.29&t=xNgl7b7BQPxw3jJ2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6%3A3895"
+                                    class="project-card__btn" target="_blank" rel="noopener">
+                                    <i class="fas fa-eye"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__title">ELARABY GO: Transporatation employees app</p>
+                    </div>
+
+                    <!-- WE Router App Project -->
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="imgs/router.png" alt="WE Router App Project" />
+                            <div class="project-card__overlay">
+                                <a href="https://www.figma.com/proto/aCP6FNe82Oh9qRR64b9LUa/Router-Application?page-id=1%3A3&node-id=636-290&viewport=6374%2C2774%2C0.39&t=AUW5uBJkV4vDdm1r-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=636%3A309&show-proto-sidebar=1"
+                                    class="project-card__btn" target="_blank" rel="noopener">
+                                    <i class="fas fa-eye"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__title">WE Router App: Full router control</p>
+                    </div>
+                </div>
+            </section>
+            <!-- End Project Sections-->
+
+            <!-- Start Stack Section-->
+            <section class="stack">
+                <div class="stack__header">
+                    <h2 class="stack__heading">Stack</h2>
+                    <a href="stack.html" class="stack__link">View Full Stack <span class="arrow">→</span></a>
+                </div>
+
+                <div class="stack__grid">
+                    <div class="stack__item">
+                        <img class="stack__icon" src="imgs/Franer.svg" alt="Framer Logo">
+                        <span class="stack__name">Framer</span>
+                    </div>
+                    <div class="stack__item">
+                        <img class="stack__icon" src="imgs/Figma.svg" alt="Figma Logo">
+                        <span class="stack__name">Figma</span>
+                    </div>
+                    <div class="stack__item">
+                        <img class="stack__icon" src="imgs/HTML.svg" alt="HTML5 Logo">
+                        <span class="stack__name">HTML5</span>
+                    </div>
+                    <div class="stack__item">
+                        <img class="stack__icon" src="imgs/CSS.svg" alt="CSS3 Logo">
+                        <span class="stack__name">CSS3</span>
+                    </div>
+                    <div class="stack__item">
+                        <img class="stack__icon" src="imgs/Photoshop.svg" alt="Notion Logo">
+                        <span class="stack__name">AdobePhotoshop</span>
+                    </div>
+                    <div class="stack__item">
+                        <img class="stack__icon" src="imgs/Hotjar.svg" alt="Hotjar Logo">
+                        <span class="stack__name">Hotjar</span>
+                    </div>
+                </div>
+            </section>
+            <!-- End Stack Section-->
+
+            <!-- Start Contact me Section-->
+            <section class="contact">
+                <div class="contact__content">
+                    <h2 class="contact__text">
+                        Do you have any project idea you<br>
+                        want to discuss about?
+                    </h2>
+                    <a href="#contact-form" class="contact__button">Contact Me</a>
+                </div>
+            </section>
+            <!-- End Contact me Section-->
+
+
+        </main>
+    </div>
+</body>
+<script>
+    // Get current page file name
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Get all sidebar links
+    const navLinks = document.querySelectorAll(".sidebar__nav a");
+
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.parentElement.classList.add("active");
+        } else {
+            link.parentElement.classList.remove("active");
+        }
+    });
+</script>
+
+</html>

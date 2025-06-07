@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Eslam</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-layout">
+        <!-- Sidebar (visible on desktop & tablet) -->
+        <aside class="sidebar" id="mobileSidebar">
+            <div class="sidebar__top">
+                <img src="imgs/image_mo.jpeg" alt="Mohamed Eslam" class="sidebar__avatar" />
+                <div class="sidebar__info">
+                    <h2 class="sidebar__name">Mohamed Eslam</h2>
+                    <p class="sidebar__title">Senior UI/UX Designer</p>
+                </div>
+                <button class="sidebar__close" id="closeSidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar__nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="about.html">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stack.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Stack</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <hr class="sidebar__divider" />
+
+            <nav class="sidebar__social">
+                <a href="#"><i class="fab fa-x-twitter"></i><span>Twitter</span></a>
+                <a href="#"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                <a href="#"><i class="fas fa-pen-nib"></i><span>Framer</span></a>
+                <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </nav>
+        </aside>
+
+        <!-- Mobile Header (visible on small screens) -->
+        <header class="mobile-header">
+            <div class="mobile-header__container">
+                <img src="imgs/image_mo.jpeg" alt="Mohamed Eslam" class="mobile-header__avatar" />
+                <div class="mobile-header__info">
+                    <h2 class="mobile-header__name">Mohamed Eslam</h2>
+                    <p class="mobile-header__title">Senior UI/UX Designer</p>
+                </div>
+                <button class="mobile-header__toggle" id="menuOpen">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+                <button class="mobile-header__toggle" id="menuClose">
+                    <i class="fas fa-times" id="menuIcon"></i>
+                </button>
+            </div>
+            <div id="mobileNavigations">
+                <nav class="sidebar__nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="about.html">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stack.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Stack</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <hr class="sidebar__divider" />
+
+                <nav class="sidebar__social">
+                    <a href="#"><i class="fab fa-x-twitter"></i><span>Twitter</span></a>
+                    <a href="#"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="#"><i class="fas fa-pen-nib"></i><span>Framer</span></a>
+                    <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- JavaScript toggle -->
+        <script>
+            const menuIcon = document.getElementById("menuIcon");
+            const sidebar = document.getElementById("mobileSidebar");
+            const openMenueBtn = document.getElementById("menuOpen");
+            const closeMenueBtn = document.getElementById("menuClose");
+
+            openMenueBtn.addEventListener("click", () => {
+                mobileNavigations.classList.add("active");
+                openMenueBtn.classList.add("hide");
+                closeMenueBtn.classList.add("active");
+            });
+
+            closeMenueBtn.addEventListener("click", () => {
+                mobileNavigations.classList.remove("active");
+                openMenueBtn.classList.remove("hide");
+                closeMenueBtn.classList.remove("active");
+            });
+        </script>
+
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero__top">
+                    <div class="hero__intro">
+                        <h2 class="hero__title">About me</h2>
+                    </div>
+
+                    <div class="hero__cta">
+                        <div class="hero__status">
+                            <span class="dot"></span>
+                            <span>Available for Projects</span>
+                        </div>
+                        <a href="contact.html" class="btn btn--black">Contact Me</a>
+                    </div>
+                </div>
+
+                <p class="hero__subtitle">
+                    UX/UI Designer with 5+ years of experience crafting user-focused digital products across diverse
+                    industries. Expertise in conducting comprehensive user research, developing intuitive wireframes,
+                    and creating interactive prototypes that prioritize usability and accessibility. Proficient in
+                    usability testing to ensure design solutions meet user needs effectively.
+                </p>
+            </section>
+
+            <!-- About me Section -->
+            <section class="about">
+                <div class="about__card">
+                    <div class="about__grid-2x2">
+
+                        <!-- Academic Education -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/academic.svg" alt="" class="about__icon" />
+                                <h3>Academic Education</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">Tanta University – Bachelor’s in Computer Science</p>
+                                    <span class="about__item-date">2018 – 2022</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Tanta Secondary School – General Secondary Certificate
+                                    </p>
+                                    <span class="about__item-date">2015 – 2018</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Non-Formal Education -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/non-formal.svg" alt="" class="about__icon" />
+                                <h3>Non-Formal Education</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">UX Design Foundation – Coursera</p>
+                                    <span class="about__item-date">2022</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Advanced User Experience – Udacity</p>
+                                    <span class="about__item-date">2022</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">User Research Best Practices – IDF</p>
+                                    <span class="about__item-date">2023</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Design Thinking – IDF</p>
+                                    <span class="about__item-date">2024</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Accessibility: How to Design for All – IDF</p>
+                                    <span class="about__item-date">2024</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Visual Design – IDF</p>
+                                    <span class="about__item-date">2024</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/experience.svg" alt="" class="about__icon" />
+                                <h3>Experience</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">Senior UI/UX Designer – ELARABY Group</p>
+                                    <span class="about__item-date">2021 – Present</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">UX/UI Designer – Hakeem Medical Services</p>
+                                    <span class="about__item-date">2020 – 2021</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">UX/UI Designer – Soundeals Platform</p>
+                                    <span class="about__item-date">2019 – 2020</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Freelance UX/UI Projects – Various Clients</p>
+                                    <span class="about__item-date">2018 – 2024</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="about__section">
+                            <div class="about__section-header">
+                                <img src="imgs/certificate.svg" alt="" class="about__icon" />
+                                <h3>Certifications</h3>
+                            </div>
+                            <ul class="about__timeline">
+                                <li>
+                                    <p class="about__item-title">User Research Best Practices – IxDF</p>
+                                    <span class="about__item-date">2023</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">UI Design Certificate – Google UX Program</p>
+                                    <span class="about__item-date">2022</span>
+                                </li>
+                                <li>
+                                    <p class="about__item-title">Accessibility: How to Design for All – Interaction
+                                        Design Foundation
+                                    </p>
+                                    <span class="about__item-date">2023</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Start Project Sections-->
+
+        </main>
+    </div>
+</body>
+
+</html>

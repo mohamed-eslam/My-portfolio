@@ -1,0 +1,81 @@
+
+@use 'variables' as *;
+
+// =============================
+// Flex Utilities
+// =============================
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+
+// =============================
+// Text Utilities
+// =============================
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.fw-bold { font-weight: 700; }
+.fw-medium { font-weight: 500; }
+.fw-normal { font-weight: 400; }
+
+// =============================
+// Spacing Utilities
+// =============================
+.m-0 { margin: 0 !important; }
+.mt-1 { margin-top: $spacer-sm; }
+.mt-2 { margin-top: $spacer; }
+.mt-3 { margin-top: $spacer-lg; }
+
+.p-0 { padding: 0 !important; }
+.p-1 { padding: $spacer-sm; }
+.p-2 { padding: $spacer; }
+.p-3 { padding: $spacer-lg; }
+
+// =============================
+// Display Utilities
+// =============================
+.d-block { display: block; }
+.d-none { display: none; }
+.d-inline-block { display: inline-block; }
+
+// =============================
+// Font Size Utilities
+// =============================
+.fs-sm { font-size: $font-size-sm; }
+.fs-base { font-size: $font-size-base; }
+.fs-lg { font-size: $font-size-lg; }
+
+// =============================
+// Background Colors
+// =============================
+.bg-white { background-color: $white; }
+.bg-black { background-color: $black; }
+.bg-primary { background-color: $primary; }
+.bg-accent { background-color: $accent; }
+
+// =============================
+// Text Colors
+// =============================
+.text-white { color: $white; }
+.text-black { color: $black; }
+.text-primary { color: $primary; }
+.text-accent { color: $accent; }
+.text-secondary { color: $secondary; }
+
+// =============================
+// Border Radius Utilities
+// =============================
+.rounded-sm { border-radius: 4px; }
+.rounded { border-radius: 8px; }
+.rounded-lg { border-radius: 16px; }
+
+// =============================
+// Position Utilities
+// =============================
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-fixed { position: fixed; }
